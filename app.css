@@ -22,9 +22,9 @@ div.content img {
 	border: none;
 }
 div.content {
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 175%;
-	padding-bottom: 10px 10px 10px 50px;
+//	padding-bottom: 10px 10px 10px 50px;
 	border: 0px solid #ccc; 
 	padding-bottom: 10px;	
 }
@@ -40,6 +40,17 @@ div.content h2 {
 }
 div.content h3 {	
 	font-size: 14px;				
+}
+span.readmore {
+	font-size: 14px;
+	padding: 5px 5px 5px 10px;
+	background: #428BCA;
+	color: white;
+	font-weight: bold;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	text-shadow: 0 0 0 #FFFFFF;
+	margin-top: 10px;
 }
 
 

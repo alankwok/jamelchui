@@ -24,18 +24,18 @@ Openrice: http://jamel.openrice.com
 	<icon src="icons/android-xhdpi.png" gap:platform="android" gap:density="xhdpi" />
 	<icon src="icons/winphone-icon.png" gap:platform="winphone" />
 	<icon src="icons/winphone-tileicon.png" gap:platform="winphone" gap:role="background" />	
-	<gap:splash src="splash/ios-splash-320x480.png" gap:platform="ios" width="320" height="480" />
-	<gap:splash src="splash/ios-splash-640x960.png" gap:platform="ios" width="640" height="960" />
-	<gap:splash src="splash/ios-splash-640x1136.png" gap:platform="ios" width="640" height="1136" />
-	<gap:splash src="splash/ios-splash-1024x748.png" gap:platform="ios" width="1024" height="748" />
-	<gap:splash src="splash/ios-splash-768x1004.png" gap:platform="ios" width="768" height="1004" />	
-	<gap:splash src="splash/ios-splash-2048x4796.png" gap:platform="ios" width="2048" height="1496" />
-	<gap:splash src="splash/ios-splash-1536x2008.png" gap:platform="ios" width="1536" height="2008" />
-	<gap:splash src="icons/android-ldpi.png" gap:platform="android" gap:density="ldpi" />
-	<gap:splash src="icons/android-mdpi.png" gap:platform="android" gap:density="mdpi" />
-	<gap:splash src="icons/android-hdpi.png" gap:platform="android" gap:density="hdpi" />
-	<gap:splash src="icons/android-xdpi.png" gap:platform="android" gap:density="xhdpi" />
-	<gap:splash src="splash/winphone-splash.png" gap:platform="winphone" />	
+	<gap:splash src="icons/ios-splash-320x480.png" gap:platform="ios" width="320" height="480" />
+	<gap:splash src="icons/ios-splash-640x960.png" gap:platform="ios" width="640" height="960" />
+	<gap:splash src="icons/ios-splash-640x1136.png" gap:platform="ios" width="640" height="1136" />
+	<gap:splash src="icons/ios-splash-1024x748.png" gap:platform="ios" width="1024" height="748" />
+	<gap:splash src="icons/ios-splash-768x1004.png" gap:platform="ios" width="768" height="1004" />	
+	<gap:splash src="icons/ios-splash-2048x4796.png" gap:platform="ios" width="2048" height="1496" />
+	<gap:splash src="icons/ios-splash-1536x2008.png" gap:platform="ios" width="1536" height="2008" />
+	<gap:splash src="icons/android-splash-ldpi.png" gap:platform="android" gap:density="ldpi" />
+	<gap:splash src="icons/android-splash-mdpi.png" gap:platform="android" gap:density="mdpi" />
+	<gap:splash src="icons/android-splash-hdpi.png" gap:platform="android" gap:density="hdpi" />
+	<gap:splash src="icons/android-splash-xdpi.png" gap:platform="android" gap:density="xhdpi" />
+	<gap:splash src="icons/winphone-splash.png" gap:platform="winphone" />	
 </widget>
 	
 

@@ -47,12 +47,12 @@ $(document).bind('mobileinit', function() {
 //	alert('Here');
 //});
 
-$(document).on('pagebeforecreate', '[data-role=page]', function () {
-  if ($(this).find('[data-role=panel]').length === 0) {
-    var panel = $.ajax({
-      url: 'panel.htm',
-      async: false
-    }).responseText;
-    $('[data-role=header]').before(panel);
-  }
-});
+//$(document).on('pagebeforecreate', '[data-role=page]', function () {
+//  if ($(this).find('[data-role=panel]').length === 0) {
+//    var panel = $.ajax({
+//      url: 'panel.htm',
+//      async: false
+//    }).responseText;
+//    $('[data-role=header]').before(panel);
+//  }
+//});
