@@ -28,20 +28,21 @@ div.content {
 	border: 0px solid #ccc; 
 	padding-bottom: 10px;	
 }
-div.content h1, div.content h2, div.content h3 {
+div.content h1.title, div.content h2.title, div.content h3.title {
 	line-height: 175%;
 	padding-bottom: 10px;
 }
-div.content h1 {  
-	font-size: 18px;		
+div.content h1.title {  
+	font-size: 20px;		
 }
-div.content h2 {	
+div.content h2.title {	
 	font-size: 16px;	
 }
-div.content h3 {	
+div.content h3.title {	
 	font-size: 14px;				
 }
-span.readmore {
+div.readmore {
+  width: 80px;
 	font-size: 14px;
 	padding: 5px 5px 5px 10px;
 	background: #428BCA;
@@ -51,8 +52,12 @@ span.readmore {
 	border-radius: 8px;
 	text-shadow: 0 0 0 #FFFFFF;
 	margin-top: 10px;
+	margin-bottom: 10px;
 }
-
+#panel ul li {
+//	height: 24px;
+	background: #bbddff;
+}
 
 
 
