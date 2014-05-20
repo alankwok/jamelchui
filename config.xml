@@ -34,7 +34,7 @@ Openrice: http://jamel.openrice.com
 	<gap:splash src="icons/android-splash-ldpi.png" gap:platform="android" gap:density="ldpi" />
 	<gap:splash src="icons/android-splash-mdpi.png" gap:platform="android" gap:density="mdpi" />
 	<gap:splash src="icons/android-splash-hdpi.png" gap:platform="android" gap:density="hdpi" />
-	<gap:splash src="icons/android-splash-xdpi.png" gap:platform="android" gap:density="xhdpi" />
+	<gap:splash src="icons/android-splash-xhdpi.png" gap:platform="android" gap:density="xhdpi" />
 	<gap:splash src="icons/winphone-splash.png" gap:platform="winphone" />	
 </widget>
 	
