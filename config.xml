@@ -36,9 +36,6 @@ Openrice: http://jamel.openrice.com
 	<gap:splash src="icons/android-splash-hdpi.png" gap:platform="android" gap:density="hdpi" />
 	<gap:splash src="icons/android-splash-xhdpi.png" gap:platform="android" gap:density="xhdpi" />
 	<gap:splash src="icons/winphone-splash.png" gap:platform="winphone" />	
-	<uses-permission android:name="android.permission.INTERNET" />
-	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 	
 </widget>
 
 
