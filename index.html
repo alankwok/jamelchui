@@ -6,27 +6,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <title></title>
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://apps.eaatup.com/jamelchui/icons/apple-touch-icon-144-precomposed.png" />
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://apps.eaatup.com/jamelchui/icons/apple-touch-icon-114-precomposed.png" />
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://apps.eaatup.com/jamelchui/icons/apple-touch-icon-72-precomposed.png" />
-<link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://apps.eaatup.com/jamelchui/icons/apple-touch-icon-57-precomposed.png" />
-<link rel="shortcut icon" href="http://apps.eaatup.com/jamelchui/icons/favicon.png" />
-<link rel="stylesheet" href="http://apps.eaatup.com/jamelchui/css/jquery.mobile-1.3.2.min.css" />
-<link rel="stylesheet" href="http://apps.eaatup.com/jamelchui/app.css" />
-<script src="http://apps.eaatup.com/jamelchui/js/jquery-1.8.3.min.js"></script>
-<script src="http://apps.eaatup.com/jamelchui/js/jquery.mobile-1.3.2.min.js"></script>
-<script src="http://apps.eaatup.com/jamelchui/app.js"></script>
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://eaatup.com/apps/jamelchui/icons/apple-touch-icon-144-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://eaatup.com/apps/jamelchui/icons/apple-touch-icon-114-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://eaatup.com/apps/jamelchui/icons/apple-touch-icon-72-precomposed.png" />
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://eaatup.com/apps/jamelchui/icons/apple-touch-icon-57-precomposed.png" />
+<link rel="shortcut icon" href="http://eaatup.com/apps/jamelchui/icons/favicon.png" />
+<link rel="stylesheet" href="http://eaatup.com/wp-content/themes/mobile/css/jquery.mobile-1.3.2.min.css" />
+<link rel="stylesheet" href="http://eaatup.com/wp-content/themes/mobile/style.css" />
+<script src="http://eaatup.com/wp-content/themes/mobile/js/jquery-1.8.3.min.js"></script>
+<script src="http://eaatup.com/wp-content/themes/mobile/js/jquery.mobile-1.3.2.min.js"></script>
+<script src="http://eaatup.com/wp-content/themes/mobile/js/jquery.preload.js"></script>
 </head>
 <body>
 <div data-role="page" id="page" data-add-back-btn="true" data-back-btn-text="Back" class="page" data-theme="d">
-  <div data-role="panel" id="panel" data-position="left" data-display="push">
-    <ul data-role="listview">  </ul>
+  <div data-animate="false" data-role="panel" id="panel" data-position="left" data-display="push">
+    <ul data-role="listview"></ul>
   </div>
   <div data-role="header" data-position="fixed" data-theme="a" style="border:0px;">
-    <a href="#panel" data-theme="d" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-btn-left ui-icon-nodisc">Menu</a>
-    <h1 class="title" id='title'></h1>
+    <a href="#panel" data-theme="d" data-icon="bars" data-inline="true" data-iconpos="notext" data-shadow="false" data-corners="false" data-iconshadow="false" class="ui-btn-left ui-icon-nodisc">Menu</a>
+    <h1 class="title" id='title'>Eaatup</h1>
   </div>
-  <div data-role="content" id="content" class="content"></div>
+  <div data-role="content" id="content" class="content">Loading ... </div>
+  <div data-role="footer" data-position="fixed" data-theme="a" style="border:0px;padding:0px;background:white;width:100%;height:50px;text-align:center;">
+    <center><iframe scrolling="no" frameborder="0" style="margin:0 auto;padding:0px; background:white; border:none;overflow:hidden;width:320px;height:50px;" src="http://eaatup.com/wp-content/plugins/ws-appgen/banners/"></iframe></center>
+  </div>
 </div>
 <script>
 $(document).bind("mobileinit", function(){
@@ -35,19 +38,25 @@ $(document).bind("mobileinit", function(){
 });
 $(document).delegate('#page', 'pageinit', function () {
   var query = '?uid=3';
-  load('http://alankwok.hopto.org/wordpress/'+query);
+//  load('http://alankwok.hopto.org/wordpress/'+query);
+//  load('http://eaatup.com/'+query);
+  load('http://eaatup.com/'+query);
   $("#page a[href*='http://']").live('click', function(e) {
     e.preventDefault();
     var url = $(this).attr('href');
     if (url.indexOf(query) == -1) url += query;
     load(url);
+    $.preload($('img').map(function(){return this.src;}));
   });
 });
 function load(url)
 {
   $('#panel').panel('close');
   $.mobile.loading('show');
-  url = 'http://apps.eaatup.com/'+'get.php?url='+encodeURIComponent(url)+'&callback=?';
+//  url = 'http://eaatup.com/apps/'+'get.php?url='+encodeURIComponent(url)+'&callback=?';
+//  url = 'http://alankwok.hopto.org/site/'+'get.php?url='+encodeURIComponent(url)+'&callback=?';
+  url = 'http://eaatup.com/'+'get.php?url='+encodeURIComponent(url)+'&callback=?';
+// alert(url);
   $.getJSON(url, function(data) {
     $('#title').html(data.title);
     $('#panel').html(data.panel);
@@ -65,4 +74,4 @@ function load(url)
 }
 </script>
 </body>
-</html>
+</html>

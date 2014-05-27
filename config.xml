@@ -5,15 +5,15 @@
 		versionCode = "10" 
 		version     = "1.0" >	
 	<name>果占苗の嚐味旅程</name>
-	<description>由小時候開始已受到家人的影響，對美食已有濃郁的興趣。漸漸長大後，更會將自己所賺回來的都用在美食上。現在，除了吃之外，還喜歡以相片一一將吃過的美食留下來，並加入小弟貧乏詞彙寫下來的文字，將所吃過的與大家分享，希望大家也會喜歡。
-
-Blog: http://www.jamelchui.com
-Email: zysk@ymail.com
-Instagram: jamel_zysk
-Openrice: http://jamel.openrice.com
-新浪微博：果占苗
+	<description>由小時候開始已受到家人的影響，對美食已有濃郁的興趣。漸漸長大後，更會將自己所賺回來的都用在美食上。現在，除了吃之外，還喜歡以相片一一將吃過的美食留下來，並加入小弟貧乏詞彙寫下來的文字，將所吃過的與大家分享，希望大家也會喜歡。
+
+Blog: http://www.jamelchui.com
+Email: zysk@ymail.com
+Instagram: jamel_zysk
+Openrice: http://jamel.openrice.com
+新浪微博：果占苗
 </description>
-	<author href="$author_url" email="alankwok@yahoo.com">$author_name</author>	
+	<author href="http://eaaatup.com" email="alankwok@yahoo.com">Eaatup.com</author>	
 	<icon src="icons/apple-touch-icon-57-precomposed.png" gap:platform="ios" width="57" height="57" />
 	<icon src="icons/apple-touch-icon-72-precomposed.png" gap:platform="ios" width="72" height="72" />
 	<icon src="icons/apple-touch-icon-114-precomposed.png" gap:platform="ios" width="114" height="114" />		
@@ -36,7 +36,9 @@ Openrice: http://jamel.openrice.com
 	<gap:splash src="icons/android-splash-hdpi.png" gap:platform="android" gap:density="hdpi" />
 	<gap:splash src="icons/android-splash-xhdpi.png" gap:platform="android" gap:density="xhdpi" />
 	<gap:splash src="icons/winphone-splash.png" gap:platform="winphone" />	
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 	
 </widget>
-	
 
 
