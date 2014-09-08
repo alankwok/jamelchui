@@ -13,7 +13,8 @@ Instagram: jamel_zysk
 Openrice: http://jamel.openrice.com
 新浪微博：果占苗
 </description>
-	<author href="http://eaaatup.com" email="alankwok@yahoo.com">Eaatup.com</author>	
+	<author href="http://eaaatup.com" email="alankwok@yahoo.com">Eaatup.com</author>
+	<preference name="permissions" value="none" />
 	<icon src="icons/apple-touch-icon-57-precomposed.png" gap:platform="ios" width="57" height="57" />
 	<icon src="icons/apple-touch-icon-72-precomposed.png" gap:platform="ios" width="72" height="72" />
 	<icon src="icons/apple-touch-icon-114-precomposed.png" gap:platform="ios" width="114" height="114" />		
@@ -31,10 +32,10 @@ Openrice: http://jamel.openrice.com
 	<gap:splash src="icons/ios-splash-768x1004.png" gap:platform="ios" width="768" height="1004" />	
 	<gap:splash src="icons/ios-splash-2048x4796.png" gap:platform="ios" width="2048" height="1496" />
 	<gap:splash src="icons/ios-splash-1536x2008.png" gap:platform="ios" width="1536" height="2008" />
-	<gap:splash src="icons/android-splash-ldpi.png" gap:platform="android" gap:density="ldpi" />
-	<gap:splash src="icons/android-splash-mdpi.png" gap:platform="android" gap:density="mdpi" />
-	<gap:splash src="icons/android-splash-hdpi.png" gap:platform="android" gap:density="hdpi" />
-	<gap:splash src="icons/android-splash-xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+	<gap:splash src="icons/android-splash-ldpi.jpg" gap:platform="android" gap:density="ldpi" />
+	<gap:splash src="icons/android-splash-mdpi.jpg" gap:platform="android" gap:density="mdpi" />
+	<gap:splash src="icons/android-splash-hdpi.jpg" gap:platform="android" gap:density="hdpi" />
+	<gap:splash src="icons/android-splash-xhdpi.jpg" gap:platform="android" gap:density="xhdpi" />
 	<gap:splash src="icons/winphone-splash.png" gap:platform="winphone" />	
 </widget>
 
